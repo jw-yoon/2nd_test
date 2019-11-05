@@ -1,0 +1,459 @@
+body, html {
+	font-family: 'Noto Sans KR', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #777;
+	font-weight: 400;
+	width: 100% !important;
+	height: 100% !important;
+}
+h1, h2, h3, h4 {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+h2 {
+	font-weight: 400;
+	font-size: 38px;
+	color: #333;
+	text-transform: uppercase;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 20px;
+}
+h2::after {
+	position: absolute;
+	content: "";
+	background: #00005a; 
+	height: 2px;
+	width: 70px;
+	bottom: 0;
+	margin-left: -35px;
+	left: 50%;
+}
+h3 {
+	font-size: 24px;
+	font-weight: 400;
+	color: #333;
+}
+h4 {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #333;
+}
+h5 {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
+}
+p {
+	font-size: 15px;
+
+}
+p.intro {
+	margin: 12px 0 0;
+	line-height: 24px;
+}
+a {
+	color: color: #777;;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	color: #222;
+}
+ul, ol {
+	list-style: none;
+}
+ul, ol {
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
+}
+.btn:active, .btn.active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+	outline: none;
+	outline-offset: none;
+}
+/* Navigation */
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+.navbar .navbar-collapse {
+	text-align: center;
+}
+#menu {
+	padding: 20px;
+	transition: all 0.8s;
+}
+#menu.navbar-default {
+	background-color: rgba(248, 248, 248, 0);
+	border-color: rgba(231, 231, 231, 0);
+}
+#menu.navbar-default .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 400;
+	font-size: 15px;
+	padding: 5px 0;
+	border: 2px solid transparent;
+	letter-spacing: 0.5px;
+	margin: 0 40px 0 40px;
+}
+#menu.navbar-default .navbar-nav > li > a:hover {
+	color: #00005a;
+}
+.on {
+	background-color: #857c73 !important;
+	padding: 0 !important;
+	padding: 10px 0 !important;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #00005a !important;
+	background-color: transparent;
+}
+.navbar-toggle {
+	border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #00005a;
+	border-color: #00005a;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #FFF;
+}
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #FFF;
+}
+.section-title {
+	margin-bottom: 70px;
+}
+.section-title .overlay {
+	padding: 80px 0;
+	background: rgba(0, 0, 0, 0.7);
+}
+.section-title p {
+	font-size: 22px;
+}
+.section-title hr {
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.btn-custom {
+	text-transform: uppercase;
+	color: #777;
+	background-color: transparent;
+	border: 2px solid #777;
+	padding: 14px 20px;
+	margin: 0;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	border-radius: 0;
+	margin-top: 20px;
+	transition: all 0.3s;
+}
+.btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
+	color: #ddd;
+	border: 2px solid #00005a;
+	background-color: #00005a;
+}
+/* 메인화면 */
+.intro {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(../img/intro-bg.jpg) center center no-repeat;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.intro .overlay {
+	background: rgba(0,0,0,0.4);
+}
+.intro h1 {
+	font-family: 'Scheherazade', serif;
+	color: #fff;
+	font-size: 11em;
+	font-weight: 400;
+	margin-top: 100;
+	
+}
+.intro span {
+	color: #a7c44c;
+	font-weight: 600;
+}
+.intro p {
+	font-family: 'Noto Serif KR', serif;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 300;
+	margin-top: 0px;
+	margin-bottom: 150px;
+}
+header .intro-text {
+	padding-top: 170px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+/* 마크라메란? */
+#mac
+{
+	padding: 120px 0px 30px;
+}
+
+#mac p{line-height: 24px;
+	margin: 15px 0 30px;}
+
+/* 작품들 */
+#gallery {
+	padding: 0;
+}
+#gallery .gallery-item {
+	margin: 0 -15px;
+}
+#gallery .container-fluid {
+	padding-bottom: 200px;
+}
+
+/* 공방소개 */
+#about {
+	padding: 0;
+	background: #f6f6f6;
+}
+#about h2::after {
+	bottom: 0;
+	margin-left: 0;
+	left: 0;
+}
+#about .about-text {
+	padding: 80px 0;
+}
+#about .about-img {
+	background: #444 url(../img/gallery-bg.jpg) center center no-repeat;
+	background-size: cover;
+	height: 580px;
+}
+#about p {
+	line-height: 24px;
+	margin: 15px 0 30px;
+}
+
+/* 클래스 */
+#features {
+	padding: 150px 0;
+}
+#features .features-item {
+	margin: 0 20px;
+}
+#features img {
+	margin: 30px auto 20px;
+}
+#features .about-img:before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	bottom: 8px;
+	left: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+#features p {
+	line-height: 24px;
+	margin: 15px 0 30px;
+}
+
+
+/* 판매 */
+#sale {
+	padding: 50px 0px 0px; 
+	margin-bottom: 80px;
+	background: #f6f6f6;
+}
+
+#sale .sale-item {
+	margin: 0 -15px;
+}
+#sale .sale-img1{background: url(../img/saleitem/dreamcacher.jpg)center center no-repeat;
+	background-size: cover;
+	height: 400px;}
+#sale .sale-img1:hover{opacity: 0.5;}
+
+#sale .sale-img2{background: url(../img/saleitem/hanger.jpg)center center no-repeat;
+	background-size: cover;
+	height: 400px;}
+#sale .sale-img2:hover{opacity: 0.5;}
+
+#sale .sale-img3{background: url(../img/saleitem/back.jpg)center center no-repeat;
+	background-size: cover;
+	height: 400px;}
+#sale .sale-img3:hover{opacity: 0.5;}	
+
+#sale .sale-img4{background: url(../img/saleitem/bag.jpg)center center no-repeat;
+	background-size: cover;
+	height: 400px;}
+#sale .sale-img4:hover{opacity: 0.5;}	
+
+
+#sale h3 {
+	padding: 10px 0;
+	text-transform: uppercase;
+
+}
+
+#sale .sale-p h4{
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+#sale .item-info{margin-bottom: 20px;}
+
+#sale .sale-section {
+	margin: 0 20px 20px;
+	padding-top: 30px;
+}
+#sale .sale-section-title {
+	font-size: 20px;
+	display: block;
+	font-weight: 400;
+	color: #777;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 30px;
+	text-align: center;
+}
+#sale .sale-item {
+	margin: 45px 0;
+	font-size: 18px;
+}
+
+/* 작가소개 */
+#team {
+	padding: 120px 0;
+}
+#team h2::after {
+	bottom: 0;
+	margin-left: 0;
+	left: 0;
+}
+
+#team .team-img {
+	display: inline-block;
+	position: relative;
+}
+
+#team img {
+	max-width: 100%; /* 이미지의 최대사이즈 */
+    width /***/: auto; /* only IE8 */
+    height: auto;
+    vertical-align: bottom;
+}
+
+
+/* 로고 */
+#logo{
+	padding: 120px 0;
+}
+
+#logo img{max-width: 100%; /* 이미지의 최대사이즈 */
+    width /***/: auto; /* only IE8 */
+    height: auto;
+    vertical-align: bottom;
+margin-bottom: 150px;}
+
+
+/* 부과정보 */
+#contact {
+	padding: 120px 0;
+	background: #b7aca5;
+}
+#contact .contact-item p {
+	font-size: 15px;
+	color: #777;
+}
+
+#contact .section-title {
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+#contact form {
+	padding: 0;
+}
+#contact h3 {
+	position: relative;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 400;
+	color: #333;
+	padding: 20px 0;
+}
+#contact h3::after {
+	position: absolute;
+	content: "";
+	background: #00005a;
+	height: 2px;
+	width: 40px;
+	bottom: 0;
+	margin-left: -20px;
+	left: 50%;
+}
+label {
+	font-size: 12px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	float: left;
+}
+
+#contact .contact-item {
+	margin: 20px 0 40px 0;
+}
+#contact .contact-item span {
+	font-weight: 400;
+	color: #aaa;
+	text-transform: uppercase;
+	margin-bottom: 6px;
+	display: inline-block;
+}
+/* Footer Section*/
+#footer {
+	background: #857c73;
+	padding: 40px 0 20px 0;
+}
+#footer .social {
+	margin-top: -5px;
+	text-align: right;
+}
+#footer .social ul li {
+	display: inline-block;
+	margin: 0 15px;
+}
+#footer .social i.fa {
+	font-size: 24px;
+	padding: 4px;
+	color: #b7aca5;
+	transition: all 0.3s;
+}
+#footer .social i.fa:hover {
+	color: #eee;
+}
+#footer p {
+	font-size: 14px;
+	color: #b7aca5;
+}
+#footer a {
+	color: #d7cac2;
+}
+#footer a:hover {
+	color: #eee;
+}
